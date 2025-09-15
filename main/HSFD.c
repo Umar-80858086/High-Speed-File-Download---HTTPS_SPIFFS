@@ -216,7 +216,10 @@ void app_main(void) {
     ESP_ERROR_CHECK(ret);
 
     if (mount_spiffs() != ESP_OK) {
-        ESP_LOGW(TAG, "SPIFFS mount failed; continuing");
+        ESP_LOGE(TAG, "SPIFFS mount failed; aborting");
+        return;
+    } else {
+        ESP_LOGI(TAG, "SPIFFS mounted successfully");
     }
 
     if (wifi_init_sta() != ESP_OK) {
