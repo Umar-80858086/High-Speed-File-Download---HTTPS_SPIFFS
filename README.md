@@ -76,21 +76,24 @@ To stop, press Ctrl + ].
 
 ## 7. Change Configurations (menuconfig)
 
-Open Command Palette (Ctrl+Shift+P). or start idf.py menuconig 
+Open Command Palette (Ctrl+Shift+P). or *start idf.py menuconig*
 
-Run ESP-IDF: Menuconfig.
+Run ESP-IDF: Menuconfig. 
 
 A terminal menu will open.
 
 Here you can change:
 
-WiFi SSID / Password
+Choose Partition Table > Partition table(Custom partition table CSV)
+
 
 SPIFFS settings
 
-Flash size, etc.
+Flash size  = 4MB , 
+Clock Speed = 80Mhz
 
-Press S to save → Q to quit.
+
+Press  save → Q to quit.
 
 After that → run build again.
 
